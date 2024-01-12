@@ -1,19 +1,21 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import EditView from '@/views/EditView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/edit',
     name: 'edit',
-    component: () => import(/* webpackChunkName: "edit" */ '../views/EditView.vue')
+    component: EditView
   },
   {
     path: '/render',
     name: 'render',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "render" */ '../views/RenderView.vue')
-  }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/edit',
+  },
 ]
 
 const router = createRouter({

@@ -7,10 +7,6 @@
 </template>
 
 <style lang="scss">
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,34 +25,6 @@ nav {
     &.router-link-exact-active {
       @apply text-blue-500;
     }
-  }
-}
-
-.disabled {
-  @apply text-gray-400;
-}
-
-button {
-  &.fab {
-    @apply w-8 h-8 rounded-full bg-blue-500 text-white shadow cursor-pointer;
-  }
-
-  &:disabled {
-    @apply text-gray-200 cursor-not-allowed bg-white;
-
-    &:hover {
-      @apply bg-white;
-    }
-  }
-}
-
-select,
-input[type=text],
-input[type=number] {
-  @apply h-8 border-b border-gray-300 rounded-sm outline-0 mb-2;
-
-  &:focus {
-    @apply border-blue-500;
   }
 }
 </style>
