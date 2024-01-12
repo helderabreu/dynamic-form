@@ -8,6 +8,7 @@
 
 <style lang="scss">
 @tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 #app {
@@ -35,11 +36,17 @@ nav {
   @apply text-gray-400;
 }
 
-button:disabled {
-  @apply text-gray-200 cursor-not-allowed bg-white;
+button {
+  &.fab {
+    @apply w-8 h-8 rounded-full bg-blue-500 text-white shadow cursor-pointer;
+  }
 
-  &:hover {
-    @apply bg-white;
+  &:disabled {
+    @apply text-gray-200 cursor-not-allowed bg-white;
+
+    &:hover {
+      @apply bg-white;
+    }
   }
 }
 

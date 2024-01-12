@@ -4,7 +4,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/edit',
     name: 'edit',
-    component: () => import(/* webpackChunkName: "about" */ '../views/EditView.vue')
+    component: () => import(/* webpackChunkName: "edit" */ '../views/EditView.vue')
   },
   {
     path: '/render',
@@ -12,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/RenderView.vue')
+    component: () => import(/* webpackChunkName: "render" */ '../views/RenderView.vue')
   }
 ]
 

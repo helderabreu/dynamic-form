@@ -31,6 +31,9 @@ devDependencies:
   '@types/jest':
     specifier: ^27.0.1
     version: 27.5.2
+  '@types/vuedraggable':
+    specifier: ^2.24.0
+    version: 2.24.0(vue@3.4.6)
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.4.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@7.32.0)(typescript@4.5.5)
@@ -2099,6 +2102,15 @@ packages:
 
   /@types/strip-json-comments@0.0.30:
     resolution: {integrity: sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==}
+    dev: true
+
+  /@types/vuedraggable@2.24.0(vue@3.4.6):
+    resolution: {integrity: sha512-QdR7Vi36ga+cjlILUWVxUBERCRWDoNbjvnWJ6SzoxPlPJUQaY1XjBprF4aH4CI/xSch8TJg5x3rjgTLlt85rew==}
+    deprecated: This is a stub types definition. vuedraggable provides its own type definitions, so you do not need this installed.
+    dependencies:
+      vuedraggable: 4.1.0(vue@3.4.6)
+    transitivePeerDependencies:
+      - vue
     dev: true
 
   /@types/webpack-env@1.18.4:
@@ -8385,7 +8397,6 @@ packages:
 
   /sortablejs@1.14.0:
     resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==}
-    dev: false
 
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
@@ -9290,7 +9301,6 @@ packages:
     dependencies:
       sortablejs: 1.14.0
       vue: 3.4.6(typescript@4.5.5)
-    dev: false
 
   /w3c-hr-time@1.0.2:
     resolution: {integrity: sha512-z8P5DvDNjKDoFIHK7q8r8lackT6l+jo/Ye3HOle7l9nICP9lf1Ci25fy9vHd0JOWewkIFzXIEig3TdKT7JQ5fQ==}
