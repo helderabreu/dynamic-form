@@ -1,5 +1,10 @@
 # Dynamic Forms
 
+Form generator.
+* Create forms with title, input (text or numbers) and checkboxes
+* Set fields as required, set default values and element ids
+* Reorder the form fields with drag&drop before generating the form
+
 ## Information
 
 * Vue3 app with Typescript and vue-router, generated with vue/cli.
